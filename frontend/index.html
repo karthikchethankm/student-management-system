@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SMS Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="login-box">
+            <h2>Sign In</h2>
+            <input type="text" id="login-email" placeholder="Email or Username">
+            <input type="password" id="login-pass" placeholder="Password">
+            <button onclick="login()">Login</button>
+            <p>New here? <a href="#" onclick="showSignup()">Sign Up</a></p>
+        </div>
+
+        <div id="signup-box" style="display:none;">
+            <h2>Sign Up</h2>
+            <input type="text" id="reg-name" placeholder="Full Name">
+            <input type="email" id="reg-email" placeholder="Email (@gmail.com)">
+            <select id="reg-course">
+                <option value="BCA">BCA</option>
+                <option value="BCom">BCom</option>
+                <option value="BBA">BBA</option>
+                <option value="Java">Java Course</option>
+                <option value="Python">Python Course</option>
+                <option value="FullStack">Full Stack Web Dev</option>
+            </select>
+            <input type="password" id="reg-pass" placeholder="Password (min 6 chars)">
+            <button onclick="register()">Next</button>
+            <p>Have account? <a href="#" onclick="showLogin()">Login</a></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

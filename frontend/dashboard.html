@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body onload="loadDashboard()">
+    <div class="navbar">
+        <h3 id="student-name">Student Name</h3>
+        <button onclick="logout()">Logout</button>
+    </div>
+
+    <div class="dashboard-container">
+        <div class="header">
+            <h2>Welcome to your Dashboard</h2>
+        </div>
+        <div class="dashboard-grid">
+            <div class="card">
+                <h3>Course</h3>
+                <p id="student-course" class="detail-text">Loading...</p>
+            </div>
+            <div class="card">
+                <h3>Your Average</h3>
+                <p id="avg-score" class="detail-text">0.00</p>
+            </div>
+            <div class="card">
+                <h3>Class Average</h3>
+                <p id="class-avg" class="detail-text">0.00</p>
+            </div>
+            <div class="card chart-card">
+                <h3>Semester Performance</h3>
+                <canvas id="myChart"></canvas>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
